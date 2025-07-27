@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Portfolio Website | CodingNepal</title>
+    <link rel="stylesheet" href="port.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  
+</head>
+<body>
+    <div class="scroll-button">
+        <a href="#home" aria-label="Scroll to top"><i class="fas fa-arrow-up"></i></a>
+    </div>
+    
+    <nav>
+        <div class="navbar">
+            <div class="logo"><a href="#">Portfolio.</a></div>
+            <ul class="menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#Project">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <div class="cancel-btn"><i class="fas fa-times"></i></div>
+            </ul>
+            <div class="media-icons">
+                <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                <a href="https://x.com/itzvickysharma" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+                <a href="https://www.instagram.com/real_vickysharma" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="home" id="home">
+        <div class="home-content">
+            <div class="text">
+                <div class="text-one">Hello,</div>
+                <div class="text-two">I'm Vivek</div>
+                <div class="text-three">Web Developer</div>
+            </div>
+            <div class="button">
+                <button>Hire Me</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="content">
+            <div class="title"><span>About Me</span></div>
+            <div class="about-details">
+                <div class="left">
+                    <img src="https://i.pinimg.com/736x/d5/ef/bc/d5efbc3e4ac8ea4f4bc817ab5d0e3ec1.jpg" alt="Vivek's photo" />
+                </div>
+                <div class="right">
+                    <div class="topic">Professional Web Developer</div>
+                    <p>
+                        I am a passionate and results-driven web developer with a keen eye for detail and a strong commitment to creating seamless, user-friendly digital experiences. With a solid foundation in front-end and back-end development, I specialize in technologies such as HTML, CSS, JavaScript, and modern frameworks like React and Node.js. I thrive on problem-solving and take pride in crafting clean, efficient code that ensures websites are not only visually appealing but also functionally robust. My collaborative mindset and ability to adapt to new challenges enable me to deliver high-quality solutions that meet both user needs and business goals. Whether building from the ground up or optimizing existing projects, I am dedicated to delivering web solutions that make an impact.
+                    </p>
+                    <div class="button">
+                        <button>Download CV</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="skills" id="skills">
+        <div class="content">
+            <div class="title"><span>My Skills</span></div>
+            <div class="skills-details">
+                <div class="text">
+                    <div class="topic">Skills Reflect Our Knowledge</div>
+                    <p>"Skills reflect our knowledge by turning theory into practice. They showcase our ability to solve problems, innovate, and create value. The more we develop our skills, the more effectively we apply what we know, demonstrating our expertise and continuous growth."</p>
+                </div>
+                <div class="boxes">
+                    <div class="box"><div class="topic">HTML</div><div class="per">90%</div></div>
+                    <div class="box"><div class="topic">CSS</div><div class="per">80%</div></div>
+                    <div class="box"><div class="topic">JavaScript</div><div class="per">70%</div></div>
+                    <div class="box"><div class="topic">React</div><div class="per">60%</div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="Projectbox" id="Project">
+        <div class="content">
+            <div class="title"><span>My Projects</span></div>
+            <div class="container">
+                <div class="project">
+                    <h3>To-Do List</h3>
+                    <p>A simple to-do list application to manage tasks.</p>
+                    <button>View Project</button>
+                </div>
+                <div class="project">
+                    <h3>My Portfolio</h3>
+                    <p>A personal portfolio to showcase my work and skills.</p>
+                    <button>View Project</button>
+                </div>
+                <div class="project">
+                    <h3>Netflix Clone</h3>
+                    <p>A clone of Netflix to explore movie streaming functionalities.</p>
+                    <button>View Project</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2 class="heading"><i class="fas fa-headset"></i> Get in <span>Touch</span></h2>
+        <div class="container">
+            <div class="content">
+                <form id="contact-form" aria-label="Contact Form">
+                    <div class="form-group">
+                        <div class="field">
+                            <input type="text" name="name" placeholder="Name" required aria-required="true">
+                            <i class="bi bi-person-fill"></i> 
+                        </div>
+                        <div class="field">
+                            <input type="email" name="email" placeholder="Email" required aria-required="true">
+                            <i class="bi bi-envelope-fill"></i>
+                        </div>
+                        <div class="field">
+                            <input type="tel" name="phone" placeholder="Phone">
+                            <i class="bi bi-telephone-fill"></i>
+                        </div>
+                        <div class="message">
+                            <textarea  placeholder="Message" name="message" required aria-required="true"></textarea>
+                            
+                        </div>
+                    </div>
+                    <div class="button-area">
+                        <button type="submit">Submit </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>Vivek's Portfolio</h3>
+                <p>Thank you for visiting my personal portfolio website. Connect with me over socials. Keep Rising 🚀. Connect with me over live chat!</p>
+            </div>
+            <div class="box">
+                <h3>Quick Links</h3>
+                <a href="#home"><i class="fas fa-chevron-circle-right"></i> Home</a>
+                <a href="#about"><i class="fas fa-chevron-circle-right"></i> About</a>
+                <a href="#skills"><i class="fas fa-chevron-circle-right"></i> Skills</a>
+                <a href="#Project"><i class="fas fa-chevron-circle-right"></i> Projects</a>
+            </div>
+            <div class="box">
+                <h3>Contact Info</h3>
+                <p><i class="fas fa-phone"></i> +91 XXX-XXX-XXXX</p>
+                <p><i class="fas fa-envelope"></i> Vikysrma07@gmail.com</p>
+                <p><i class="fas fa-map-marked-alt"></i> Chandigarh, Mohali Pin-140301</p>
+            </div>
+        </div>
+        <h1 class="credit">Designed with <i class="fa fa-heart pulse"></i> by Vivek</h1>
+    </section>
+
+    <script src="port.js"></script>
+</body>
+</html>

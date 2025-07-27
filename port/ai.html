@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="jigar sable, portfolio, jigar, full stack dev, personal portfolio lifecodes, portfolio design, portfolio website, personal portfolio" />
+    <meta name="description" content="Welcome to Jigar's Portfolio. Full-Stack Web Developer and Android App Developer" />
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+        @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&display=swap");
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            outline: none;
+            border: none;
+            text-transform: capitalize;
+            transition: all 0.2s linear;
+        }
+
+        body {
+            background: #f7f7f7;
+            font-family: "Poppins", sans-serif;
+        }
+
+        html {
+            font-size: 62.5%;
+            overflow-x: hidden;
+        }
+
+        section {
+            min-height: 100vh;
+            padding: 2rem 9%;
+        }
+
+        .heading {
+            font-size: 3.5rem;
+            color: rgb(32, 32, 32);
+            font-weight: 800;
+            text-align: center;
+        }
+
+        .heading span {
+            color: rgb(115, 3, 167);
+        }
+
+        .contact {
+            background: #e5ecfb;
+            min-height: 60vh;
+        }
+
+        .contact .container {
+            max-width: 1050px;
+            width: 100%;
+            background: #fff;
+            border-radius: 1.5rem;
+            margin: 2rem 5rem;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+        }
+
+        .contact .content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 2.5rem 2rem;
+        }
+
+        .contact .content .image-box {
+            max-width: 60%;
+            margin-left: 4rem;
+        }
+
+        .contact .content .image-box img {
+            width: 100%;
+            height: 40rem;
+            position: relative;
+        }
+
+        form {
+            width: 45%;
+            margin-right: 3.5rem;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .field {
+            height: 50px;
+            display: flex;
+            position: relative;
+            margin: 1rem;
+            width: 100%;
+        }
+
+        form i {
+            position: absolute;
+            top: 50%;
+            left: 18px;
+            color: rgb(51, 51, 51);
+            font-size: 17px;
+            pointer-events: none;
+            transform: translateY(-50%);
+        }
+
+        .field input,
+        .message textarea {
+            width: 100%;
+            height: 100%;
+            outline: none;
+            padding: 0 16px 0 48px;
+            font-size: 16px;
+            font-family: "Poppins", sans-serif;
+            border-radius: 5px;
+            border: 1px solid rgb(51, 51, 51);
+            background: #e5ecfb;
+        }
+
+        .button-area {
+            display: flex;
+            float: right;
+            flex-direction: row-reverse;
+        }
+
+        .button-area button {
+            color: #fff;
+            border: none;
+            outline: none;
+            font-size: 1.8rem;
+            cursor: pointer;
+            border-radius: 5px;
+            padding: 13px 25px;
+            background: #2506ad;
+            box-shadow: 0px 5px 10px rgba(48, 68, 247, 0.6);
+            transition: 0.3s ease;
+            font-family: "Nunito", sans-serif;
+        }
+
+        .footer {
+            min-height: auto;
+            padding-top: 0;
+            background: rgb(0, 1, 43);
+        }
+
+        .footer .box-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .footer .box-container .box {
+            flex: 1 1 25rem;
+            margin: 2.5rem;
+        }
+
+        .footer .box-container .box h3 {
+            font-size: 2.5rem;
+            color: #fff;
+            padding-bottom: 1rem;
+            font-weight: normal;
+        }
+
+        .footer .box-container .box p {
+            font-size: 1.5rem;
+            color: #ccc;
+            padding: 0.7rem 0;
+            text-transform: none;
+        }
+
+        .footer .credit {
+            padding: 1rem 0 0 0;
+            text-align: center;
+            font-size: 1.5rem;
+            font-family: "Nunito", sans-serif;
+            font-weight: 600;
+            color: #fff;
+            border-top: 0.1rem solid #fff3;
+        }
+
+        @media (max-width: 900px) {
+            .contact .container {
+                margin: 3rem 0 2rem 0;
+            }
+
+            .contact .content .image-box {
+                display: none;
+            }
+
+            .contact .content form {
+                width: 100%;
+                margin-right: 2rem;
+            }
+        }
+
+        @media (max-width: 450px) {
+            html {
+                font-size: 55%;
+            }
+
+            body {
+                padding-right: 0;
+            }
+
+            section {
+                padding: 2rem;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link id='favicon' rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-png">
+    <title>Portfolio | Jigar Sable</title>
+</head>
+<body oncontextmenu="return false">
+
+<section class="contact" id="contact">
+    <h2 class="heading"><i class="fas fa-headset"></i> Get in <span>Touch</span></h2>
+    <div class="container">
+        <div class="content">
+            <div class="image-box">
+                <img draggable="false" src="./assets/images/contact1.png" alt="">
+            </div>
+            <form id="contact-form">
+                <div class="form-group">
+                    <div class="field">
+                        <input type="text" name="name" placeholder="Name" required>
+                        <i class='fas fa-user'></i>
+                    </div>
+                    <div class="field">
+                        <input type="text" name="email" placeholder="Email" required>
+                        <i class='fas fa-envelope'></i>
+                    </div>
+                    <div class="field">
+                        <input type="text" name="phone" placeholder="Phone">
+                        <i class='fas fa-phone-alt'></i>
+                    </div>
+                    <div class="message">
+                        <textarea placeholder="Message" name="message" required></textarea>
+                        <i class="fas fa-comment-dots"></i>
+                    </div>
+                </div>
+                <div class="button-area">
+                    <button type="submit">
+                        Submit <i class="fa fa-paper-plane"></i>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
+<section class="footer">
+    <div class="box-container">
+        <div class="box">
+            <h3>Jigar's Portfolio</h3>
+            <p>Thank you for visiting my personal portfolio website. Connect with me over socials. <br/> <br/> Keep Rising 🚀. Connect with me over live chat!</p>
+        </div>
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="#home"><i class="fas fa-chevron-circle-right"></i> home</a>
+            <a href="#about"><i class="fas fa-chevron-circle-right"></i> about</a>
+            <a href="#skills"><i class="fas fa-chevron-circle-right"></i> skills</a>
+            <a href="#education"><i class="fas fa-chevron-circle-right"></i> education</a ```html
+            <a href="#work"><i class="fas fa-chevron-circle-right"></i> work</a>
+            <a href="#experience"><i class="fas fa-chevron-circle-right"></i> experience</a>
+        </div>
+        <div class="box">
+            <h3>contact info</h3>
+            <p> <i class="fas fa-phone"></i>+91 XXX-XXX-XXXX</p>
+            <p> <i class="fas fa-envelope"></i>Vikysrma07@gmail.com</p>
+            <p> <i class="fas fa-map-marked-alt"></i>Chandigarh,Mohali Pin-140301</p>
+            <div class="share">
+                <a href="#" class="fab fa-linkedin" aria-label="LinkedIn" target="_blank"></a>
+                <a href="#" class="fab fa-github" aria-label="GitHub" target="_blank"></a>
+                <a href="#" class="fas fa-envelope" aria-label="Mail" target="_blank"></a>
+                <a href="https://twitter.com/jigar_sable" class="fab fa-twitter" aria-label="Twitter" target="_blank"></a>
+                <a href="https://t.me/lifecode5" class="fab fa-telegram-plane" aria-label="Telegram" target="_blank"></a>
+            </div>
+        </div>
+    </div>
+    <h1 class="credit">Designed with <i class="fa fa-heart pulse"></i> by <a href="https://www.linkedin.com/in/jigar-sable"> jigar sable</a></h1>
+</section>
+
+<a href="#home" aria-label="ScrollTop" class="fas fa-angle-up" id="scroll-top"></a>
+
+<script>
+    // JavaScript functionality can be added here if needed
+</script>
+
+</body>
+</html>
